@@ -69,6 +69,52 @@ Airflow uses a separate PostgreSQL container for its internal metadata only:
                      - Task states
                      - Users
                      - Scheduling information
+                     
+## 🐳 Docker Setup
+
+Airflow runs inside Docker containers.
+The main services are:
+    postgres
+    airflow-init
+    airflow-webserver
+    airflow-scheduler
+# PostgreSQL
+Used only for Airflow metadata.
+
+# Airflow-init
+Initializes the Airflow database and creates the Airflow administrator account.
+
+# Airflow-webserver
+Provides the Airflow web interface.
+
+# Airflow-scheduler
+Responsible for scheduling and triggering DAG tasks.
+
+## 🔐 Environment Variables
+Sensitive configuration is stored in .env.
+
+Example:
+
+AIRFLOW_UID=50000
+
+POSTGRES_USER=airflow
+POSTGRES_PASSWORD=airflow
+POSTGRES_DB=airflow
+
+AIRFLOW_ADMIN_USER=admin
+AIRFLOW_ADMIN_PASSWORD=admin
+
+MYSQL_HOST=host.docker.internal
+MYSQL_PORT=3306
+MYSQL_USER=root
+MYSQL_PASSWORD=your_mysql_password
+MYSQL_DATABASE=FOREIGN_RATES
+
+EXCHANGERATE_API_KEY=YOUR_API_KEY
+EXCHANGERATE_BASE_CURRENCY=USD
+
+# Important: Do not commit your .env file or API key to GitHub.
+Add this to .gitignore:
 
 ## PostgreSQL is not used for the exchange-rate data.
 The actual exchange-rate data is stored in MySQL.
