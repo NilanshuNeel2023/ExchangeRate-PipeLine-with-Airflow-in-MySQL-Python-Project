@@ -58,6 +58,7 @@ The main objectives of this project are:
 ## Airflow Metadata
 Airflow uses a separate PostgreSQL container for its internal metadata only:
 
+
 Airflow
    │
    ▼
