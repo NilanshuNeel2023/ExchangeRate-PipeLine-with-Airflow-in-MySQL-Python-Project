@@ -59,16 +59,16 @@ The main objectives of this project are:
 Airflow uses a separate PostgreSQL container for its internal metadata only:
 
 
-Airflow
-   │
-   ▼
-PostgreSQL Docker Container
-   │
-   └── Airflow metadata
-       - DAG runs
-       - Task states
-       - Users
-       - Scheduling information
+              Airflow
+                 │
+                 ▼
+      PostgreSQL Docker Container
+                 │
+                 └── Airflow metadata
+                     - DAG runs
+                     - Task states
+                     - Users
+                     - Scheduling information
 
 ## PostgreSQL is not used for the exchange-rate data.
 The actual exchange-rate data is stored in MySQL.
@@ -87,24 +87,24 @@ PostgreSQL	                     Airflow metadata database
 VS Code	                         Development environment
 
 ## 📂 Project Structure
-Exchange Rate Pipeline with Airflow - Python Project/
-│
-├── dags/
-│   └── exchange_rate_incremental_dag.py
-│
-├── scripts/
-│   └── exchange_rate_client.py
-│
-├── sql/
-│   └── Exchange_Rates.sql
-│
-├── logs/
-│
-├── .env
-│
-├── docker-compose.yml
-│
-└── README.md
+                Exchange Rate Pipeline with Airflow - Python Project/
+                │
+                ├── dags/
+                │   └── exchange_rate_incremental_dag.py
+                │
+                ├── scripts/
+                │   └── exchange_rate_client.py
+                │
+                ├── sql/
+                │   └── Exchange_Rates.sql
+                │
+                ├── logs/
+                │
+                ├── .env
+                │    
+                ├── docker-compose.yml
+                │
+                └── README.md
 
 ## 💡 Key Learning Outcomes
 This project demonstrates practical knowledge of:
