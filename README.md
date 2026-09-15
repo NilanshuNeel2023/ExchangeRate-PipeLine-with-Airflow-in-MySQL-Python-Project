@@ -93,27 +93,27 @@ Responsible for scheduling and triggering DAG tasks.
 ## 🔐 Environment Variables
 Sensitive configuration is stored in .env.
 
-Example:
+      Example:
 
-AIRFLOW_UID=50000
+      AIRFLOW_UID=50000
 
-POSTGRES_USER=airflow
-POSTGRES_PASSWORD=airflow
-POSTGRES_DB=airflow
+      POSTGRES_USER=airflow
+      POSTGRES_PASSWORD=airflow
+      POSTGRES_DB=airflow
 
-AIRFLOW_ADMIN_USER=admin
-AIRFLOW_ADMIN_PASSWORD=admin
+      AIRFLOW_ADMIN_USER=admin
+      AIRFLOW_ADMIN_PASSWORD=admin
 
-MYSQL_HOST=host.docker.internal
-MYSQL_PORT=3306
-MYSQL_USER=root
-MYSQL_PASSWORD=your_mysql_password
-MYSQL_DATABASE=FOREIGN_RATES
+      MYSQL_HOST=host.docker.internal
+      MYSQL_PORT=3306
+      MYSQL_USER=root
+      MYSQL_PASSWORD=your_mysql_password
+      MYSQL_DATABASE=FOREIGN_RATES
 
-EXCHANGERATE_API_KEY=YOUR_API_KEY
-EXCHANGERATE_BASE_CURRENCY=USD
+      EXCHANGERATE_API_KEY=YOUR_API_KEY
+      EXCHANGERATE_BASE_CURRENCY=USD
 
-# Important: Do not commit your .env file or API key to GitHub.
+## Important: Do not commit your .env file or API key to GitHub.
 Add this to .gitignore:
 
 ## PostgreSQL is not used for the exchange-rate data.
