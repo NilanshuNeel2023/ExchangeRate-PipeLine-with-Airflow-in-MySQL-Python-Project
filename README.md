@@ -19,15 +19,16 @@ The main objectives of this project are:
 - Monitor pipeline execution through the Airflow Web UI.
 
 ## 🏗️ Project Architecture
-                    ExchangeRate API
+                     ExchangeRate API
+                 ("exchangerate-api.com")
                            │
                            │
                            ▼
-                 Python API Client
-              requests + Pandas
+                    Python API Client
+                    requests + Pandas
                            │
                            ▼
-                  Data Cleaning
+                     Data Cleaning
                            │
                            ▼
                     Apache Airflow
@@ -213,4 +214,4 @@ Python · Pandas · SQL · MySQL · Apache Airflow · Docker · ETL · API Integ
 
 ## ⭐ Project Summary
 
-Exchange Pipeline with Airflow in MySQL Python Project is an automated ETL pipeline that extracts foreign exchange rates from an API, transforms and validates the data using Python/Pandas, checks for new data using an incremental watermark strategy, and loads the results into MySQL. Apache Airflow manages the workflow and scheduling, while Docker provides the execution environment. MySQL Workbench is used to manage and verify the resulting exchange-rate data.
+Exchange Pipeline with Airflow in MySQL Python Project is an automated ETL pipeline that extracts foreign exchange rates("exchangerate-api.com") from an API use this link enter your e-mail address its generate the API-Key sent it to your email, transforms and validates the data using Python/Pandas, checks for new data using an incremental watermark strategy, and loads the results into MySQL. Apache Airflow manages the workflow and scheduling, while Docker provides the execution environment. MySQL Workbench is used to manage and verify the resulting exchange-rate data.
